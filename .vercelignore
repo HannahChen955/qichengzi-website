@@ -1,0 +1,26 @@
+# 开发相关文件
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+server.log
+
+# 数据库相关文件
+data/
+
+# 应用代码（只部署前端）
+app/
+scripts/
+*.py
+*.sh
+
+# 其他文件
+.DS_Store
+.env
+.gitignore
+README*.md
+Dockerfile
+docker-compose.yml
+compose.yaml
+requirements.txt

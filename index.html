@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七橙子 - 让有能力、想做事的人，找到值得信任的环境</title>
+    <meta name="description" content="专注AI应用方向的精品猎头服务，连接真正想做事的人与值得信任的团队。提供岗位推荐、转型指导、企业招聘支持。">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/qichengzi_clean_logo_128.png" sizes="128x128">
+    <link rel="icon" href="/images/qichengzi_clean_logo_256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="/images/qichengzi_clean_logo_128.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* 全局图片安全样式 */
+        img { 
+            max-width: 100%; 
+            height: auto; 
+        }
+        
+        /* 统一链接样式 */
+        a:not(.nav-link):not(.btn) {
+            @apply text-orange-600 hover:text-orange-700 hover:underline;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+        
+        <!-- 粘性导航 -->
+        <nav class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
+            <div class="h-14 flex items-center justify-between">
+                <!-- Logo + 品牌 -->
+                <div class="flex items-center">
+                    <img src="/images/qichengzi_clean_logo_128.png" alt="七橙子 logo" class="w-8 h-8">
+                    <div class="ml-3 flex items-center gap-2">
+                        <span class="text-orange-500 font-semibold">七橙子</span>
+                        <span class="text-neutral-700">｜遇见AI，连接未来</span>
+                    </div>
+                </div>
+                
+                <!-- 桌面端菜单 -->
+                <div class="hidden md:flex gap-6 text-sm text-neutral-600">
+                    <a href="#mission" class="nav-link hover:text-neutral-900 transition">使命</a>
+                    <a href="#services" class="nav-link hover:text-neutral-900 transition">服务</a>
+                    <a href="#about" class="nav-link hover:text-neutral-900 transition">关于我们</a>
+                    <a href="#contact" class="btn rounded-xl bg-orange-500 text-white px-4 py-2 hover:bg-orange-600 transition">联系我们</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 pb-4">
+                <a href="#mission" class="block py-2 text-neutral-600 hover:text-neutral-900">使命</a>
+                <a href="#services" class="block py-2 text-neutral-600 hover:text-neutral-900">服务</a>
+                <a href="#about" class="block py-2 text-neutral-600 hover:text-neutral-900">关于我们</a>
+                <a href="#contact" class="block py-2 text-orange-600 font-medium">联系我们</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900">
+                    让有能力、想做事的人，<br>
+                    <span class="text-orange-500">找到值得信任的环境</span>
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-neutral-600">
+                    专注 AI 应用方向｜精品推荐｜转型指导｜长期陪伴
+                </p>
+                <p class="mt-2 text-base text-neutral-500 italic">
+                    Connecting real people to meaningful AI opportunities.
+                </p>
+                
+                <div class="mt-8 flex gap-3">
+                    <a href="#services" class="btn rounded-xl bg-orange-500 text-white px-6 py-3 hover:bg-orange-600 transition">
+                        了解我们的服务
+                    </a>
+                    <a href="#contact" class="btn rounded-xl border border-orange-500 text-orange-500 px-6 py-3 hover:bg-orange-50 transition">
+                        预约一对一沟通
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <img src="/images/hero-bridge-ai.jpg" alt="AI猎头服务连接人才与企业" 
+                     class="w-full max-w-[560px] md:ml-auto rounded-2xl shadow-sm object-cover">
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-16 md:py-24 scroll-mt-24">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">我们的使命</h2>
+                <div class="max-w-3xl mx-auto mt-8 space-y-6 leading-relaxed text-neutral-700">
+                    <p>当前大厂环境下，真正有能力、愿意为企业长远发展付出的人，常常缺乏被看见与重用的机会。</p>
+                    <p>许多决策并非出于公司利益最大化，而是为了满足层级关系与个人利益。</p>
+                    <p>我们希望打破这种局限，连接那些真正想做事的人，与值得信任、开放的团队。</p>
+                    <p class="text-orange-600 font-semibold text-lg">我们不做人力中介，我们是有温度的理解者、判断者、连接者。</p>
+                    <p class="text-xl text-neutral-600 font-medium italic">
+                        愿景：连接"想做事的人"与"愿意信任的团队"，在 AI 浪潮中共同成长。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 scroll-mt-24">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">我们的服务</h2>
+                <p class="mt-4 text-xl text-neutral-600">面向候选人与企业，双向赋能</p>
+            </div>
+            
+            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- 服务卡片1 -->
+                <div class="rounded-2xl border p-6 bg-white hover:shadow-md transition">
+                    <img src="/images/icon-matching.png" alt="岗位推荐" class="w-16 h-16 object-contain">
+                    <h3 class="mt-4 text-xl font-medium text-gray-900">AI 应用岗位推荐</h3>
+                    <div class="mt-3 space-y-1 text-sm text-neutral-600">
+                        <p>• 基于行业与技能画像，精准推荐</p>
+                        <p>• 匹配岗位文化与个人价值观</p>
+                    </div>
+                    <a href="#contact" class="mt-5 inline-flex text-sm text-orange-600 hover:text-orange-700 hover:underline">了解更多 →</a>
+                </div>
+                
+                <!-- 服务卡片2 -->
+                <div class="rounded-2xl border p-6 bg-white hover:shadow-md transition">
+                    <img src="/images/icon-upskill.png" alt="AI转型指导" class="w-16 h-16 object-contain">
+                    <h3 class="mt-4 text-xl font-medium text-gray-900">非技术背景的 AI 转型指导</h3>
+                    <div class="mt-3 space-y-1 text-sm text-neutral-600">
+                        <p>• 识别可迁移技能</p>
+                        <p>• 补充 AI 应用知识</p>
+                        <p>• 规划职业路径</p>
+                    </div>
+                    <a href="#contact" class="mt-5 inline-flex text-sm text-orange-600 hover:text-orange-700 hover:underline">了解更多 →</a>
+                </div>
+                
+                <!-- 服务卡片3 -->
+                <div class="rounded-2xl border p-6 bg-white hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                    <img src="/images/icon-company.png" alt="企业支持" class="w-16 h-16 object-contain">
+                    <h3 class="mt-4 text-xl font-medium text-gray-900">企业招聘与团队搭建支持</h3>
+                    <div class="mt-3 space-y-1 text-sm text-neutral-600">
+                        <p>• 岗位画像共创</p>
+                        <p>• 匹配落地型人才</p>
+                        <p>• 长期招聘合作</p>
+                    </div>
+                    <a href="#contact" class="mt-5 inline-flex text-sm text-orange-600 hover:text-orange-700 hover:underline">了解更多 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 scroll-mt-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/images/founder-placeholder.jpg" alt="创始人照片" 
+                         class="w-full max-w-[520px] rounded-2xl shadow-sm object-cover">
+                </div>
+                
+                <div class="max-w-prose text-neutral-700">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">关于创始人</h2>
+                    <div class="mt-6 space-y-4 leading-relaxed">
+                        <p>拥有十余年跨国大厂经验，熟悉制造业、供应链、团队管理。</p>
+                        <p>对 AI 行业有浓厚兴趣，并亲身经历职业转型探索。</p>
+                        <p class="text-orange-600 font-semibold">希望用专业判断与行业理解，为候选人与企业搭建真实可信的桥梁。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">让我们聊聊你的下一步</h2>
+                <p class="mt-4 text-xl text-neutral-600">无论你是候选人还是企业，我们都期待与你建立联系</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- 联系表单 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border">
+                    <form class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">姓名</label>
+                                <input type="text" id="name" name="name" 
+                                       class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400" 
+                                       placeholder="请输入您的姓名">
+                            </div>
+                            <div>
+                                <label for="contact" class="block text-sm font-medium text-gray-700 mb-2">联系方式</label>
+                                <input type="text" id="contact" name="contact" 
+                                       class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400" 
+                                       placeholder="手机/微信/邮箱">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="identity" class="block text-sm font-medium text-gray-700 mb-2">身份</label>
+                            <select id="identity" name="identity" 
+                                    class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                                <option value="">请选择您的身份</option>
+                                <option value="candidate">候选人 - 寻求职业机会</option>
+                                <option value="company">企业 - 寻找人才</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">留言</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400" 
+                                      placeholder="请告诉我们您的需求或想了解的内容..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full rounded-xl bg-orange-500 text-white px-5 py-3 hover:bg-orange-600 transition font-medium">
+                            发送消息
+                        </button>
+                        
+                        <p class="mt-4 text-xs text-neutral-500">
+                            我们承诺保护您的隐私，您的信息仅用于联系和服务提供。
+                        </p>
+                    </form>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200 space-y-2">
+                        <p class="text-sm text-gray-600">或者直接联系我们：</p>
+                        <div class="space-y-1 text-sm">
+                            <p class="flex items-center text-gray-700">
+                                <span class="font-medium">邮箱：</span>
+                                <span class="ml-2">contact@7chengzi.cn</span>
+                            </p>
+                            <p class="flex items-center text-gray-700">
+                                <span class="font-medium">微信：</span>
+                                <span class="ml-2">请发邮件获取</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 联系插图 -->
+                <div class="hidden md:block">
+                    <img src="/images/contact-warm.png" 
+                         class="w-full max-w-[560px] md:ml-auto rounded-2xl object-cover" 
+                         alt="联系插图">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-sm text-neutral-500 border-t mt-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <p class="font-medium text-orange-600 mb-2">只为真正愿意做事的人牵线。</p>
+            <p>© 七橙子 2025. All rights reserved.</p>
+            <p class="mt-1">域名：7chengzi.cn</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 点击菜单项后关闭移动端菜单
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // 表单提交处理
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const button = e.target.querySelector('button[type="submit"]');
+                const originalText = button.textContent;
+                button.textContent = '发送中...';
+                button.disabled = true;
+                
+                setTimeout(() => {
+                    button.textContent = '发送成功！';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.disabled = false;
+                    }, 2000);
+                }, 1000);
+            });
+        }
+
+        // 平滑滚动增强
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

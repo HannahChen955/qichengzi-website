@@ -1,0 +1,26 @@
+{
+  "name": "qichengzi-website",
+  "version": "1.0.0",
+  "description": "七橙子官网 - AI 应用方向精品猎头服务",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3333",
+    "preview": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "AI",
+    "recruitment", 
+    "headhunting",
+    "七橙子",
+    "qichengzi"
+  ],
+  "author": "七橙子团队",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/qichengzi-website.git"
+  },
+  "homepage": "https://7chengzi.cn",
+  "devDependencies": {},
+  "dependencies": {}
+}
